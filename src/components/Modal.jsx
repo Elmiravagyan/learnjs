@@ -11,10 +11,11 @@ class Modalo extends Component {
 
 	render() {
 		const { open } = this.state;
+		console.log(this.props.slang, 'rendered');
 
 		return (
 			<div>
-				{/*<Button onClick={this.trigger}>Mini</Button>*/}
+				<Button onClick={this.trigger}>Mini</Button>
 				<Modal open={open} onClose={this.trigger}>
 					<Modal.Header>Delete Your Account</Modal.Header>
 					<Modal.Content>
