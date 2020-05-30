@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import Items from './components/Items';
 import {Button} from 'semantic-ui-react';
+import {Counter} from './components/Counter';
 
 function App() {
 	const [data, setData] = useState(null);
@@ -22,8 +23,10 @@ function App() {
 
 	return (
 		<>
-			<Button onClick={changeDataVisibility}>Get Data</Button>
-			<Items items={data} isLoading={isLoading}/>
+			{/*<Button onClick={changeDataVisibility}>Get Data</Button>*/}
+			{/*<Items items={data} isLoading={isLoading}/>*/}
+			<Counter guestsCounter={true}/>
+			<Counter />
 		</>
 	)
 }
